@@ -12,8 +12,14 @@ hexo.extend.filter.register("before_generate", function () {
   const { log, config } = hexo;
   const postsDir = path.join(hexo.base_dir, "source/_posts");
 
-  // 校验核心配置
   const mastodonConfig = config["mastodon-comments-helper"] || {};
+  
+  // 判断是否开启
+  if (!mastodonConfig["enable"]) {
+    return;
+  }
+
+  // 校验核心配置
   if (!mastodonConfig["MASTODON_DOMAIN"] || !mastodonConfig["MASTODON_TOKEN"]) {
     log.error("[Mastodon Comments Helper] 请配置 mastodon-comments-helper.MASTODON_DOMAIN 和 mastodon-comments-helper.MASTODON_TOKEN");
     return;
