@@ -1,0 +1,8 @@
+# Mastodon Comments Helper
+# For more information: https://github.com/feiju12138/mastodon-comments https://github.com/feiju12138/hexo-next-mastodon-comments https://github.com/feiju12138/hexo-next-mastodon-comments-helper
+mastodon-comments-helper:
+  enable: false
+  MASTODON_DOMAIN: mastodon.social # Mastodon 实例域名
+  MASTODON_TOKEN: xxx # Mastodon 实例中具有写入权限的用户令牌
+  # TOOT_TEMPLATE: "我发布了一篇文章《{{postTitle}}》，一起来评论吧~" # 自定义嘟文模板
+  # REQUEST_PROXY: http://127.0.0.1:7890 # HTTP请求代理
