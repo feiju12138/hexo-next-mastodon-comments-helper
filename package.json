@@ -1,0 +1,25 @@
+{
+  "name": "hexo-next-mastodon-comments-helper",
+  "version": "1.0.0",
+  "description": "Auto add `toot-id` in post header.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "https://github.com/feiju12138/hexo-next-mastodon-comments-helper",
+  "keywords": [
+    "Hexo",
+    "NexT",
+    "mastodon-comments"
+  ],
+  "author": "feiju12138",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/feiju12138/hexo-next-mastodon-comments-helper/issues"
+  },
+  "homepage": "https://github.com/feiju12138/hexo-next-mastodon-comments-helper#readme",
+  "dependencies": {
+    "js-yaml": "^4.1.1",
+    "sync-request": "^6.1.0"
+  }
+}
