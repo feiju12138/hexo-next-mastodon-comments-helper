@@ -47,3 +47,5 @@ title: Hello World
 toot-id: "116164221651686918"
 ---
 ```
+
+⚠️ The API call frequency limit is 300 times per hour.
