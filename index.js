@@ -157,7 +157,7 @@ hexo.extend.filter.register("before_generate", function () {
 
       // 重新拼接并写入文件
       const newFrontMatter = newFrontMatterLines.join("\n").trim() + "\n";
-      const newContent = `---\n${newFrontMatter}---\n${contentRest.join("---")}`;
+      const newContent = `---\n${newFrontMatter}---${contentRest.join("---")}`;
       fs.writeFileSync(filePath, newContent, "utf8");
       log.info(`[Mastodon Comments Helper] 已将 toot-id 写入文件: ${file}`);
       if (tootURL) {
