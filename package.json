@@ -1,6 +1,6 @@
 {
   "name": "hexo-next-mastodon-comments-helper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Auto add `toot-id` in post header.",
   "main": "index.js",
   "scripts": {
